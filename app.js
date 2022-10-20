@@ -3,8 +3,10 @@ var btnTranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
 
-console.log(txtInput)
-btnTranslate.addEventListener("click",function clickEventHandler(){
+//outputDiv.innerText = "Neha"
+//console.log(txtInput)
+function clickHandler(){
     console.log("clicked!");
     console.log("input",txtInput.value);
-})
+};
+btnTranslate.addEventListener("click",clickHandler)
