@@ -8,6 +8,10 @@ var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 function getTranslationURL(text){
     return serverURL + "?" +"text=" + text
 }
+function errorHandler(error){
+    console.log("error occured",error)
+    alert("Something wrong with server!try again after some time");
+}
 function clickHandler(){
     //outputDiv.innerText="aredsserfr   "+txtInput.value;
     var inputText = txtInput.Value;
@@ -15,5 +19,6 @@ function clickHandler(){
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
     .then(json => console.log(json))
+    .catch()
 };
 btnTranslate.addEventListener("click",clickHandler)
