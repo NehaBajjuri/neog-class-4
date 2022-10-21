@@ -6,7 +6,7 @@
     --off-white:#d1d5db;
 }textarea{
     height: 80px;
-    width: 800px;
+    width: 500px;
     border:1px solid black;
     background-color:rgb(246, 255, 0);
     border-bottom-left-radius: 0.5rem;
